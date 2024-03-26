@@ -1,0 +1,22 @@
+(Name)John Doe
+(Age)20
+(Street) 1761 Blue Jay Cir
+(City)Ashtabula, OH
+(Flags)NYN
+
+(Name)Jane Doe
+(Flags)YNY
+(Street)65 Liberty St
+(City)San Francisco, CA
+
+(Name)Sally Jones
+(Age)25
+(Street)10 Rue Saint-Florentin
+(City)Paris
+(Flags)YYY
+
+(Name)Mike Jones
+(Age)33
+(Flags)NNN
+(Street)39 W 20th Ave
+(City)Vancouver
