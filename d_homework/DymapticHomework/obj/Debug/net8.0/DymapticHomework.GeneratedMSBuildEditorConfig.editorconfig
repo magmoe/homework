@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DymapticHomework
-build_property.ProjectDir = C:\Users\User\source\repos\NewRepo\d_homework\DymapticHomework\
+build_property.ProjectDir = C:\Users\User\source\repos\DymapticHomework\DymapticHomework\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

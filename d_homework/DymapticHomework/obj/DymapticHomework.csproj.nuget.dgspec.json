@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\NewRepo\\d_homework\\DymapticHomework\\DymapticHomework.csproj": {}
+    "C:\\Users\\User\\source\\repos\\DymapticHomework\\DymapticHomework\\DymapticHomework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\NewRepo\\d_homework\\DymapticHomework\\DymapticHomework.csproj": {
+    "C:\\Users\\User\\source\\repos\\DymapticHomework\\DymapticHomework\\DymapticHomework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\NewRepo\\d_homework\\DymapticHomework\\DymapticHomework.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\DymapticHomework\\DymapticHomework\\DymapticHomework.csproj",
         "projectName": "DymapticHomework",
-        "projectPath": "C:\\Users\\User\\source\\repos\\NewRepo\\d_homework\\DymapticHomework\\DymapticHomework.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\DymapticHomework\\DymapticHomework\\DymapticHomework.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\NewRepo\\d_homework\\DymapticHomework\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\DymapticHomework\\DymapticHomework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

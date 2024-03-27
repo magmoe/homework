@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DymapticHomework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11c9996d0c62b3fe76877afb2051ed19c391a827")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DymapticHomework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DymapticHomework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DymapticHomework
+﻿namespace DymapticHomework
 {
     public class Person
     {
@@ -12,10 +6,10 @@ namespace DymapticHomework
         public int? Age { get; set; }
         public string Street { get; set; }
         public string City { get; set; }
-        public string State { get; set; } = "N/A";
-        public bool IsFemale { get; set; }
-        public bool IsStudent { get; set; }
-        public bool IsEmployee { get; set; }
+        public string State { get; set; }
+        public bool? IsFemale { get; set; }
+        public bool? IsStudent { get; set; }
+        public bool? IsEmployee { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
 
@@ -31,6 +25,11 @@ namespace DymapticHomework
                 IsFemale = flags.ToUpper()[0] == 'Y';
                 IsStudent = flags.ToUpper()[1] == 'Y';
                 IsEmployee = flags.ToUpper()[2] == 'Y';
+            } else
+            {
+                IsFemale = null;
+                IsStudent = null;
+                IsEmployee = null;
             }
             Latitude = latitude;
             Longitude = longitude;
@@ -38,10 +37,14 @@ namespace DymapticHomework
 
         public override string ToString()
         {
-            string gender = IsFemale ? "Female" : "Male";
-            string ageString = Age.HasValue ? Age.ToString() : "";
-            string studentStatus = IsStudent ? "Yes" : "No";
-            string employeeStatus = IsEmployee ? "Yes" : "No";
+            string gender = IsFemale.HasValue ? (IsFemale.Value ? "Female" : "Male") : "Unknown";
+            string? ageString = Age.HasValue ? Age.ToString() : "";
+            string studentStatus = IsStudent.HasValue ? (IsStudent.Value ? "Yes" : "No") : "Unknown";
+            string employeeStatus = IsEmployee.HasValue ? (IsEmployee.Value ? "Yes" : "No") : "Unknown";
+
+            // Check if latitude and longitude are 0.0, and display "Unknown" in that case
+            string latitudeString = Latitude != 0.0 ? Latitude.ToString() : "Unknown";
+            string longitudeString = Longitude != 0.0 ? Longitude.ToString() : "Unknown";
 
             string output = $"{Name} {(Age.HasValue ? $"[{ageString}, {gender}]" : $"[{gender}]")}\n";
             output += $"   Street   : {Street}\n";
@@ -49,7 +52,8 @@ namespace DymapticHomework
             output += $"   State    : {(string.IsNullOrEmpty(State) ? "N/A" : State)}\n";
             output += $"   Student  : {studentStatus}\n";
             output += $"   Employee : {employeeStatus}\n";
-            output += $"   Latitude/Longitude {Latitude}, {Longitude}\n";
+            output += $"   Latitude/Longitude: {latitudeString}, {longitudeString}\n";
+            output += $"------------------------------------------------------\n";
 
             return output;
         }
